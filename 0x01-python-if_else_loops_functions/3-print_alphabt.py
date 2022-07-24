@@ -5,4 +5,4 @@ while(number < 123):
         number += 1
         continue
     print("{:s}".format(chr(number)), end='')
-    number =+ 1
+    number += 1
