@@ -4,7 +4,7 @@
 
 
 class Rectangle:
-    ''' Class Rectangle'''
+    '''Class Rectangle'''
     def __init__(self, width=0, height=0):
         '''Initializing atributes'''
         self.height = height
@@ -39,18 +39,18 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        '''Defining a method to get the area of the Rectangle'''
+        '''Defining a method to achieve the area of the Rectangle'''
         return (self.height * self.width)
 
     def perimeter(self):
         '''Defining a method to get the perimeter of the Rectangle'''
         if self.height == 0 or self.width == 0:
             return 0
-        return ((self.height + self.width) *2)
+        return ((self.height + self.width) * 2)
 
     def __str__(self):
         '''Defining __str__ Method'''
-        if self.height == 0 or self.with == 0:
+        if self.height == 0 or self.width == 0:
             return ""
         else:
             printable = ((("#" * self.width) + "\n") * self.height)
