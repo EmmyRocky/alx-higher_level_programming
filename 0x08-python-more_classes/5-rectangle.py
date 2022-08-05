@@ -42,12 +42,12 @@ class Rectangle:
         return (self.height * self.width)
 
     def perimeter(self):
-        '''Defining a method to get the perimeter of the Rectangle'''
+        '''Defining a method to achieve the perimeter of the Rectangle'''
         if self.height == 0 or self.width == 0:
             return 0
         return ((self.height + self.width) *2)
 
-    def __str__(sefl):
+    def __str__(self):
         '''Defining __str__ Method'''
         if self.height == 0 or self.with == 0:
             return ""
@@ -57,7 +57,7 @@ class Rectangle:
 
     def __repr__(self):
         '''Defining __repr__ Method'''
-        return "Rectangle({}, {})".format(self.width, self.height
+        return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
         """Defining __del__ Method"""
