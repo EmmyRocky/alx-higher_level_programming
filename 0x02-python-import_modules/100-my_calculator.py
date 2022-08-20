@@ -2,7 +2,7 @@
 
 
 if __name__ == "__main__":
-    from calculator_1.py import add, sub, mul, div
+    from calculator_1 import add, sub, mul, div
     import sys
 
     args_sum = len(sys.argv) -1
@@ -11,7 +11,6 @@ if __name__ == "__main__":
     if args_sum !=3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-
     if sys.argv[2] not in operators:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
