@@ -18,11 +18,11 @@ if __name__ == "__main__":
     a = sys.argv[1]
     b = sys.argv[3]
     operator = sys.argv[2]
-    if operator == operators[0]:
+    if operator == operators [0]:
         print("{} {} {} = {}".format(a, operator, b, add(int(a), int(b))))
-    elif operator == operators[1]:
+    elif operator == operators [1]:
         print("{} {} {} = {}".format(a, operator, b, sub(int(a), int(b))))
-    elif operator == operators[2]:
+    elif operator == operators [2]:
         print("{} {} {} = {}".format(a, operator, b, mul(int(a), int(b))))
-    elif operator == operators[3]:
+    elif operator == operators [3]:
         print("{} {} {} = {}".format(a, operator, b, div(int(a), int(b))))
