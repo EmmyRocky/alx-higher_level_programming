@@ -2,7 +2,7 @@
 
 
 if __name__ == "__main__":
-    from calculator_1 import add, sub, mul, div
+    from calculator_1.py import add, sub, mul, div
     import sys
 
     args_sum = len(sys.argv) -1
