@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 def divivsible_by_2(my_list=[]):
-    realbranded_list = list(my_list)
-
-    for i in range(len(my_list)):
-        if my_list[i] % 2 == 0:
-            realbranded_list[i] = True
+    newer_list = []
+    for element in my_list:
+        if element % 2 == 0:
+            newer_list.append(True)
         else:
-            realbranded_list[i] = False
-    return realbranded_list[i]
+            newer_list.append(False)
+            return (newer_list)
