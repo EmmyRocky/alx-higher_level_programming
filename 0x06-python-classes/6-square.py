@@ -6,18 +6,18 @@ class Square():
     """ square class describing the size & proper validation """
 
     def __init__(self, size=0, position=(0, 0)):
-        """ Start up data """
+        """" Start up data """
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """ retrieving the size """
+        """" retrieving the size """
         return self.__size
 
     @property
     def position(self):
-        """ retrieving the position """
+        """" retrieving the position """
         return self.__position
 
     @size.setter
@@ -32,7 +32,7 @@ class Square():
 
     @position.setter
     def position(self, value):
-        """ determine position """
+        """" determine position """
         if (type(value) is not tuple):
             raise TypeError("position has to be a tuple of two positive integers")
         elif (len(value) is not 2):
@@ -45,7 +45,7 @@ class Square():
             self.__position = value
 
     def area(self):
-        """ retrieve area of the square """
+        """" retrieve area of the square """
         return self.size ** 2
 
     def my_print(self):
