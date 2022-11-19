@@ -3,6 +3,7 @@
 
 
 class Square():
+    """Class identifying a Square"""
 
     def __init__(self, size):
         """ begin the class attribute
@@ -11,4 +12,3 @@ class Square():
             size (int): size of the square
         """
         self.__size = size
-
