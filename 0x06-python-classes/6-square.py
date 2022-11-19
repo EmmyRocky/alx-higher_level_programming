@@ -35,7 +35,7 @@ class Square():
         """ determine position """
         if (type(value) is not tuple):
             raise TypeError
-        elif (len(value) is not 2):
+        elif (len(value) != 2):
             raise TypeError
         elif (type(value[0]) is not int) or (type(value[1]) is not int):
             raise TypeError
