@@ -1,0 +1,9 @@
+1. Divide a matrix
+
+Write a function that divides all elements of a matrix.
+	*Prototype: def matrix_divided(matrix, div):
+	*matrix must be a list of lists of integers or floats
+	*Returns a new matrix
+	*You are not allowed to import any module
+
+
