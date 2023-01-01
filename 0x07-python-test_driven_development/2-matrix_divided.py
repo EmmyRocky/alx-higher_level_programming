@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-""" Producing the Function matrix_divided """
+"""Producing the Function matrix_divided"""
 
 
 def matrix_divided(matrix, div):
-    """Function that divides fully all elements of the matrix involved"""
+    """Function that divides all elements of a matrix"""
     mtx = []
     c = 0
-    l_error = "matrix has to be matrix (list of lists) of integers/floats"
+    l_error = "matrix must be a matrix (list of lists) of integers/floats"
 
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
@@ -19,10 +19,10 @@ def matrix_divided(matrix, div):
         if type(matrix[i]) is not list:
             raise TypeError(l_error)
         if len(matrix[0]) != len(matrix[i]):
-            raise TypeError("Each specific row of the matrix must have the same size")
+            raise TypeError("Each row of the matrix must have the same size")
 
     for i in range(len(matrix)):
-        mtx.appen([])
+        mtx.append([])
         if type(matrix[i]) is not list:
             raise TypeError(l_error)
         for k in matrix[i]:
@@ -31,4 +31,4 @@ def matrix_divided(matrix, div):
             c = k / div
             c = round(c, 2)
             mtx[i].append(c)
-        return mtx
+    return mtx
