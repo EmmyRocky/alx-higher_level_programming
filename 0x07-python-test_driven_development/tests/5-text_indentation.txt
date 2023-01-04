@@ -17,7 +17,7 @@ Hey there.
 <BLANKLINE>
 My name is Emmanuel.
 <BLANKLINE>
-What is your name?
+What is yours?
 <BLANKLINE>
 
 >>> text = "Hey there. My name is Emmanuel. What is yours"
